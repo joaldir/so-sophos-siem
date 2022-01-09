@@ -1,5 +1,5 @@
 FROM alpine:latest
 
-LABEL maintainer="Joaldir"
+LABEL maintainer=joaldir
 
 RUN /bin/sh -c apk add python3
