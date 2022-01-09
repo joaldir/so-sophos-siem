@@ -2,7 +2,7 @@
 FROM debian:latest
 
 # define o mantenedor da imagem
-LABEL maintainer="Macoratti"
+LABEL maintainer="Joaldir"
 
 # Atualiza a imagem com os pacotes
 RUN apt-get update && apt-get upgrade -y
