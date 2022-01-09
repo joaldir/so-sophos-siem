@@ -1,1 +1,3 @@
 sudo docker run --name so-sophos-siem --rm -i -t joaldir/so-sophos-siem
+
+sudo docker run --name so-sophos-siem -v /opt/sophos/config.ini:/opt/Sophos-Central-SIEM-Integration/config.ini -v /opt/sophos/state:/opt/Sophos-Central-SIEM-Integration/state -v /opt/sophos/log:/opt/Sophos-Central-SIEM-Integration/log --rm -i -t joaldir/so-sophos-siem
