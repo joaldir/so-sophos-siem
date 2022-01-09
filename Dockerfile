@@ -1,17 +1,7 @@
-# define a imagem base
-FROM debian:latest
+FROM apline:latest
 
-# define o mantenedor da imagem
 LABEL maintainer="Joaldir"
 
-# Atualiza a imagem com os pacotes
-RUN apt-get update && apt-get upgrade -y
+CMD ["/bin/sh"]
 
-# Instala o NGINX para testar
-RUN apt-get install nginx -y
-
-# Expoe a porta 80
-EXPOSE 80
-
-# Comando para iniciar o NGINX no Container
-CMD ["nginx", "-g", "daemon off;"]
+RUN /bin/sh -c apk add python3
