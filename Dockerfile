@@ -7,3 +7,7 @@ RUN apk add --no-cache python3 git
 RUN cd /opt
 
 RUN git clone https://github.com/joaldir/Sophos-Central-SIEM-Integration.git /opt/Sophos-Central-SIEM-Integration/
+
+WORKDIR /opt/Sophos-Central-SIEM-Integration
+
+CMD [ "python3", "./siem.py"]
